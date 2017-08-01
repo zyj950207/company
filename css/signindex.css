@@ -1,0 +1,251 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+html,body{
+	width:100%;
+	height:100%;
+	background:url("../images/login_background.jpg") no-repeat;
+	background-size:cover;
+}
+
+#logo{
+	position:absolute;
+	top:30px;
+	left:50px;
+}
+/*用户登录div*/
+#signin{
+	width:400px;
+	height:480px;
+	border-top:1px solid red;
+	position:absolute;
+	right:200px;
+	top:300px;
+	background:white;
+}
+#signin .shape{
+	width:6px;
+	height:22px;
+	background:tomato;
+	position:absolute;
+	left:30px;
+	top:32px;
+}
+#signin .txt{
+	font-size:18px;
+	font-weight:bold;
+	position:absolute;
+	left:50px;
+	top:30px;
+}
+#signin .phonenumber{
+	position:absolute;
+	width:290px;
+	height:40px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	top:75px;
+	left:72px;
+	border:1px solid #A52A2A;
+	background:white;
+}
+#telInfo{
+	position:absolute;
+	width:200px;
+	height:20px;
+	top:120px;
+	left:32px;
+	color:#A52A2A;
+}
+#signin .phone{
+	top:75px;
+	left:32px;
+	width:40px;
+	height:40px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	position:absolute;
+	background:#FFE4E1;
+	text-align:center;
+	line-height:40px;
+	border:1px solid #A52A2A;
+	color:#A52A2A;
+}
+input::-webkit-input-placeholder{
+	   	font-weight:bold;
+	   	text-indent:10px;
+	   	font-size:16px;
+	   }
+#signin .pincode{
+	position:absolute;
+	width:110px;
+	height:40px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	top:155px;
+	left:73px;
+	border:1px solid #A52A2A;
+	background:white;
+}
+#codeInfo{
+	/*border:1px solid pink;*/
+	position:absolute;
+	width:200px;
+	height:20px;
+	top:200px;
+	left:32px;
+	color:#A52A2A;
+}
+#signin .erweima{
+	top:155px;
+	left:32px;
+	width:40px;
+	height:40px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	position:absolute;
+	background:#FFE4E1;
+	text-align:center;
+	line-height:40px;
+	border:1px solid #A52A2A;
+	color:#A52A2A;
+}
+#codes{
+	width:50px;
+	height:40px;
+	border:1px solid #A52A2A;
+	position:absolute;
+	top:155px;
+	right:153px;
+	border-radius:5px;
+	text-align:center;
+	line-height:40px;
+	color:#A52A2A;
+	font-size:16px;
+}
+#getcode{
+	width:110px;
+	height:40px;
+	position:absolute;
+	top:155px;
+	right:35px;
+	background:#F08080;
+	font-size:14px;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	line-height:40px;
+	border-radius:5px;
+	border:1px solid #F08080;
+}
+#signin .password{
+	position:absolute;
+	width:290px;
+	height:40px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	top:235px;
+	left:72px;
+	border:1px solid #A52A2A;
+	background:white;
+}
+#pwdInfo{
+	/*border:1px solid pink;*/
+	position:absolute;
+	width:250px;
+	height:20px;
+	top:280px;
+	left:32px;
+	color:#A52A2A;
+}
+#signin .password_img{
+	top:235px;
+	left:32px;
+	width:40px;
+	height:40px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	position:absolute;
+	background:#FFE4E1;
+	text-align:center;
+	line-height:40px;
+	border:1px solid #A52A2A;
+	color:#A52A2A;
+}
+/*确认密码*/
+#signin .confirmPassword_img{
+	top:315px;
+	left:32px;
+	width:40px;
+	height:40px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	position:absolute;
+	background:#FFE4E1;
+	text-align:center;
+	line-height:40px;
+	border:1px solid #A52A2A;
+	color:#A52A2A;
+}
+#signin .confirmPassword{
+	position:absolute;
+	width:290px;
+	height:40px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	top:315px;
+	left:72px;
+	border:1px solid #A52A2A;
+	background:white;
+}
+#repwdInfo{
+	/*border:1px solid pink;*/
+	position:absolute;
+	width:200px;
+	height:20px;
+	top:360px;
+	left:32px;
+	color:#A52A2A;
+}
+/*同意并提交*/
+#sub{
+	width:330px;
+	height:40px;
+	background:#DC143C;
+	font-size:16px;
+	font-weight:bold;
+	color:white;
+	position:absolute;
+	top:405px;
+	left:32px;
+	text-align:center;
+	line-height:40px;
+	border-radius:5px;
+	border:1px solid #DC143C;
+}
+#signin .text1{
+	color:#1E90FF;
+	position:absolute;
+	bottom:16px;
+	left:32px;
+}
+#signin .text2{
+	position:absolute;
+	bottom:16px;
+	left:170px;
+}
+#signin .text3{
+	color:#1E90FF;
+	position:absolute;
+	bottom:16px;
+	right:32px;
+}
+.error{
+    color:blue;
+    font-size:14px;
+}
+.correct{
+	color:green;
+	font-size:16px;
+}

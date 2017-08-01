@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>localStorage</title>
+	<script src="js/jquery-1.11.0.js"></script>
+</head>
+<body>
+	<form action="">
+		<input type="text" id="registername"><br>
+		<input type="text" id="registerpwd"><br>
+		<button type="button" value="注册" class="register">注册</button>
+	</form>
+	<br>
+	<hr>
+	<form action="">
+		<input type="text" id="loginname"><br>
+		<input type="text" id="loginpwd"><br>
+		<button type="button" value="登录" class="login">登录</button>
+	</form>
+</body>
+<script>
+	$(function(){
+		$(".register").click(function(){
+			var registername = $("#registername").val();
+			var registerpwd = $("#registerpwd").val();
+			if(localStorage.getItem(registername)){
+               alert("已经被注册");
+               return;
+			}else{
+				localStorage.setItem(registername,registerpwd);
+				alert("注册成功");
+			}
+		})
+
+		$(".login").click(function(){
+			var loginname = $("#loginname").val();
+			var loginpwd = $("#loginpwd").val();
+			if(localStorage.getItem(loginname)==null){
+				alert("该号码没有被注册");
+				return;
+			}else{
+				if(localStorage.getItem(loginname)!=loginpwd){
+					alert("信息不正确");
+					return;
+				}else{
+					alert("登录成功");
+				}
+			}
+		})
+	})
+</script>
+</html>
